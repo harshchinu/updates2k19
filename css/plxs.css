@@ -1,0 +1,75 @@
+.parallax1 {
+			  
+			  background-image: url("PLX/abx.jpg");
+
+			  
+			  min-height: 300px; 
+
+			  
+			  background-attachment: fixed;
+			  background-position: center;
+			  background-repeat: no-repeat;
+			  background-size: cover;
+}
+		.parallax2 {
+			  
+			  background-image: url("PLX/world.jpg");
+
+			  min-height: 300px; 
+
+			  background-attachment: fixed;
+			  background-position: center;
+			  background-repeat: no-repeat;
+			  background-size: cover;
+}
+		.parallax3 {
+			  background-image: url("PLX/road.jpeg");
+
+			  min-height: 300px; 
+
+			  background-attachment: fixed;
+			  background-position: center;
+			  background-repeat: no-repeat;
+			  background-size: cover;
+}
+		.parallax4 {
+			  background-image: url("PLX/pond.jpg");
+
+			  min-height: 300px; 
+
+			  background-attachment: fixed;
+			  background-position: center;
+			  background-repeat: no-repeat;
+			  background-size: cover;
+}
+		.parallax5 {
+			  background-image: url("PLX/ironn.jpg");
+
+			  min-height: 300px; 
+
+			  background-attachment: fixed;
+			  background-position: center;
+			  background-repeat: no-repeat;
+			  background-size: cover;
+}
+		.parallax6 {
+			  background-image: url("PLX/road.jpeg");
+
+			  min-height: 300px; 
+
+			  background-attachment: fixed;
+			  background-position: center;
+			  background-repeat: no-repeat;
+			  background-size: cover;
+}
+
+		.parallax7 {
+			  background-image: url("PLX/bw.png");
+
+			  min-height: 300px; 
+
+			  background-attachment: fixed;
+			  background-position: center;
+			  background-repeat: no-repeat;
+			  background-size: cover;
+}

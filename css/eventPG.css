@@ -1,0 +1,171 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #999966;
+  font-family: Helvetica, sans-serif;
+}
+
+img{
+  /*margin-left: -6.5%;
+  margin-top: -4.3%;
+  width: 113.1%;*/
+}
+
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 5px;
+  background-color: white;
+  top: -3%;
+  bottom: 0;
+  left: 50%;
+  margin-left: -1.5px;
+}
+
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+.container::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #f4511e;
+  top: 15px;
+  border-radius: 50%;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  left: 50%;
+}
+
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: -1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: -1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+.right::after {
+  left: -16px;
+}
+
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+
+.button1 {
+        color: #fff;
+        border: none;
+        margin: 0px;
+        padding: 10px 20px;
+        display: inline-block;
+        font: bold 18px sans-serif;
+        background: #fd7c2a;
+        text-decoration: none;
+        transition: background 2s;
+
+  /*background-color: #f4511e;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 1;
+  transition: 0.3s;
+  border:50%;*/
+}
+
+.button1:hover {
+  /*opacity: 0.6*/
+  background: #3cc16e;
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 600px) {
+  img{
+    
+  }
+
+  .timeline::after {
+  left: 31px;
+  }
+  
+  .container {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+  
+  .container::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  }
+
+  .left::after, .right::after {
+  left: 15px;
+  }
+  
+  .right {
+  left: 0%;
+  }
+
+  .button1 {
+  background-color: #f4511e;
+  border: none;
+  color: white;
+  padding: 7px 14px;
+  text-align: center;
+  font-size: 12px;
+  opacity: 1;
+  transition: 0.3s;
+  width: 90%;
+}
+
+.button1:hover {opacity: 0.6}
+}

@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Updates2k19</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- btstrp general s-->
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+  	
+  	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<!-- btstrp general end -->
+	
+<!-- font s -->
+  <link href="https://fonts.googleapis.com/css?family=Saira+Stencil+One&display=swap" rel="stylesheet">
+
+<!-- font e -->
+
+	<link rel="stylesheet" type="text/css" href="css/screen.css">
+  <link rel="stylesheet" type="text/css" href="css/ScreenBackground.css">
+  <link rel="stylesheet" type="text/css" href="css/mainmenu.css">
+	<link rel="stylesheet" type="text/css" href="css/image_gridW3.css">
+	<link rel="stylesheet" type="text/css" href="css/card.css">
+	<link rel="stylesheet" type="text/css" href="css/team.css">
+	<link rel="stylesheet" type="text/css" href="css/contact.css">
+	<link rel="stylesheet" type="text/css" href="css/plxs.css">
+  <link rel="stylesheet" type="text/css" href="css/sponosor.css">
+       <link href="css/freelancer.min.css" rel="stylesheet">
+
+       <a href="https://icons8.com/icon/13928/instagram-old">Instagram Old icon by Icons8</a>
+      
+      
+
+      <script type="text/javascript" src="js/TopScrollButton.js"></script>
+      
+  <!-- <script type="text/javascript" src="js/ScreenBackg.js"></script> -->
+  
+  
+
+	<style type="text/css">
+		*{
+			scroll-behavior: smooth;
+		}
+
+    #TopScrolBtn {  /*topScrollB*/
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 30px;
+      z-index: 99;
+      font-size: 18px;
+      border: none;
+      outline: none;
+      background-color: orange;
+      color: white;
+      cursor: pointer;
+      padding: 15px;
+      border-radius: 50%;
+      border:2px solid black;
+}
+
+    #TopScrolBtn:hover {  /*topScrollB*/
+      background-color: #555;
+}
+
+  .button1 {        /*event section*/
+        color: #fff;
+        border: none;
+        margin: 0px;
+        padding: 10px 20px;
+        display: inline-block;
+        font: bold 18px sans-serif;
+        background: #fd7c2a;
+        text-decoration: none;
+        transition: background 2s;
+
+  /*background-color: #f4511e;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 1;
+  transition: 0.3s;
+  border:50%;*/
+}
+
+.button1:hover {      /*event section*/
+  /*opacity: 0.6*/
+  background: #3cc16e;
+}
+		
+
+
+</style>
+</head>
+<body id="page-top">
+
+<button onclick="topFunction()" id="TopScrolBtn" title="Go to top">Top</button>
+
+
+
+
+<nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Updates 2k19</a>
+      <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Events</a>
+          </li>
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Team</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+<div class="title">
+    <h2 class="scett">Sarvajanik College Of Engineering And Technology</h2>
+    <img class="logo1" src="images/scetnew.png">
+    <img class="logo2" src="images/logo.png">
+    <h3 class="presents">presents</h3>
+    <h3 class="tagline1">The Most Awaited Event</h3>
+    <h1 class="updates2019">Updates2k19</h1>
+    <h3 class="tagline2">It's all about<strong> F U N</strong></h3><br><br><br>
+    <h2 class="datee">6<sup>th</sup>-7<sup>th</sup> September 2019</h2>
+<!-- 
+    <section id="section03" class="demo">
+      <a href="#mission"><span></span>Scroll</a>
+  </section> -->
+  </div>
+ 
+
+  <script type="text/javascript">
+    let particles = []
+let microparticles = []
+
+const c1 = createCanvas({width: $(window).width(), height: $(window).height()})
+
+const tela   = c1.canvas;
+const canvas = c1.context;
+
+// $("body").append(tela);
+$("body").append(c1.canvas);
+
+
+class Particle{
+  constructor(canvas){
+    this.random = Math.random()
+    this.random1 = Math.random()
+    this.random2 = Math.random()
+    this.progress = 0;
+    this.canvas = canvas;
+    this.life = 1000 + (Math.random()*3000)
+
+    this.x = ($(window).width()/2)  + (Math.random()*20 - Math.random()*20)
+    this.y = $(window).height()
+    this.s = 2 + Math.random();
+    this.w = $(window).width()
+    this.h = $(window).height()
+    this.direction = this.random > .5 ? -1 : 1
+    this.radius = 1 + (3 * this.random)
+    this.color  = "#ff417d"
+
+    this.ID = setInterval(function(){
+      microparticles.push(new microParticle(c1.context,{
+        x: this.x,
+        y: this.y
+      }))
+    }.bind(this), this.random*20)
+
+    setTimeout(function(){
+      clearInterval(this.ID)
+    }.bind(this), this.life )
+  }
+
+  render(){
+    this.canvas.beginPath();
+    this.canvas.arc(this.x, this.y, this.radius, 0, 2 * Math.PI);
+    // this.canvas.lineWidth = 2;
+    this.canvas.shadowOffsetX = 0;
+    this.canvas.shadowOffsetY = 0;
+    // this.canvas.shadowBlur = 6;
+    this.canvas.shadowColor = "#000000";
+    this.canvas.fillStyle = this.color;
+    this.canvas.fill();
+    this.canvas.closePath();
+  }
+
+  move(){
+    this.x -= (this.direction) * Math.sin(this.progress/((this.random1*430))) * this.s;
+    this.y -= Math.cos(this.progress/this.h) * this.s;
+
+    if(this.x < 0 || this.x > this.w - this.radius){
+      clearInterval(this.ID)
+      return false
+    }
+
+    if(this.y < 0){
+      clearInterval(this.ID)
+      return false
+    }
+    this.render()
+    this.progress++
+    return true
+  }
+}
+
+class microParticle{
+  constructor(canvas, options){
+    this.random = Math.random()
+    this.random1 = Math.random()
+    this.random2 = Math.random()
+    this.progress = 0;
+    this.canvas = canvas;
+
+    this.x = options.x
+    this.y = options.y
+    this.s = 2 + Math.random() * 3;
+    this.w = $(window).width()
+    this.h = $(window).height()
+    this.radius = 1 + this.random*0.5
+    this.color  = "#4EFCFE";//this.random > .5 ? "#a9722c" : "#FFFED7"
+  }
+
+  render(){
+    this.canvas.beginPath();
+    this.canvas.arc(this.x, this.y, this.radius, 0, 2 * Math.PI);
+    this.canvas.lineWidth = 2;
+    this.canvas.fillStyle = this.color;
+    this.canvas.fill();
+    this.canvas.closePath();
+  }
+
+  move(){
+    this.x -= Math.sin(this.progress/(100/(this.random1 - this.random2*10))) * this.s;
+    this.y += Math.cos(this.progress/this.h) * this.s;
+
+    if(this.x < 0 || this.x > this.w - this.radius){
+      return false
+    }
+
+    if(this.y > this.h){
+      return false
+    }
+    this.render()
+    this.progress++
+    return true
+  }
+}
+
+var random_life = 1000
+
+
+setInterval(
+  function(){
+    particles.push(new Particle(canvas))
+    random_life = 2000 * Math.random()
+  }.bind(this)
+, random_life)
+
+function clear(){
+  let grd = canvas.createRadialGradient(tela.width/2, tela.height/2, 0, tela.width/2, tela.height/2, tela.width);
+        grd.addColorStop(0,"rgba(82,42,114,1)");
+        grd.addColorStop(1,"rgba(26,14,4,0)");
+    // Fill with gradient
+    canvas.globalAlpha=0.16;
+    canvas.fillStyle=grd;
+    canvas.fillRect(0, 0, tela.width, tela.height);
+}
+
+function blur(ctx,canvas, amt) {
+  // ctx.filter = `blur(${amt}px)`
+  // ctx.drawImage(canvas, 0, 0)
+  // ctx.filter = 'none'
+}
+
+function update(){
+  clear();
+  particles = particles.filter(function(p) {
+    return p.move()
+  })
+  microparticles = microparticles.filter(function(mp) {
+    return mp.move()
+  })
+  requestAnimationFrame(update.bind(this))
+}
+
+
+function createCanvas(properties){
+  let canvas = document.createElement('canvas');
+      canvas.width = properties.width;
+      canvas.height = properties.height;
+  let context = canvas.getContext('2d');
+  return {
+    canvas: canvas,
+    context: context
+  }
+}
+update()
+
+  </script>
+ 
+   <div class="container">
+  <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Our  Sponsors</h2>
+  <div class="divider-custom">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon">
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="divider-custom-line"></div>
+      </div>
+   <section class="customer-logos slider">
+      <div class="slide"><img src="https://image.freepik.com/free-vector/luxury-letter-e-logo-design_1017-8903.jpg"></div>
+      <div class="slide"><img src="http://www.webcoderskull.com/img/logo.png"></div>
+      <div class="slide"><img src="https://image.freepik.com/free-vector/3d-box-logo_1103-876.jpg"></div>
+      <div class="slide"><img src="https://image.freepik.com/free-vector/blue-tech-logo_1103-822.jpg"></div>
+      <div class="slide"><img src="https://image.freepik.com/free-vector/colors-curl-logo-template_23-2147536125.jpg"></div>
+      <div class="slide"><img src="https://image.freepik.com/free-vector/abstract-cross-logo_23-2147536124.jpg"></div>
+      <div class="slide"><img src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg"></div>
+      <div class="slide"><img src="https://image.freepik.com/free-vector/background-of-spots-halftone_1035-3847.jpg"></div>
+      <div class="slide"><img src="https://image.freepik.com/free-vector/retro-label-on-rustic-background_82147503374.jpg"></div>
+   </section>
+</div>
+
+
+<section class="page-section portfolio" id="portfolio">
+    <div class="container">
+
+      <!-- Portfolio Section Heading -->
+      <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Events</h2>
+
+      <!-- Icon Divider -->
+      <div class="divider-custom">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon">
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="divider-custom-line"></div>
+      </div>
+
+      <!-- Portfolio Grid Items -->
+      <div class="row">
+
+        <!-- Portfolio Item 1 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center text-white">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/cabin.png" alt="">
+          </div>
+        </div>
+
+        <!-- Portfolio Item 2 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center text-white">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/cake.png" alt="">
+          </div>
+        </div>
+
+        <!-- Portfolio Item 3 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center text-white">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/circus.png" alt="">
+          </div>
+        </div>
+
+        <!-- Portfolio Item 4 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal4">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center text-white">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/game.png" alt="">
+          </div>
+        </div>
+
+        <!-- Portfolio Item 5 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal5">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center text-white">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/safe.png" alt="">
+          </div>
+        </div>
+
+        <!-- Portfolio Item 6 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal6">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center text-white">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/submarine.png" alt="">
+          </div>
+        </div>
+
+      </div>
+      <!-- /.row -->
+
+    </div>
+  </section>
+
+<!-- event  e-->
+
+<!--about s-->
+<section class="page-section bg-primary text-white mb-0" id="about">
+    <div class="container">
+
+      <!-- About Section Heading -->
+      <h2 class="page-section-heading text-center text-uppercase text-white">About Updates</h2>
+
+      <!-- Icon Divider -->
+      <div class="divider-custom divider-light">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon">
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="divider-custom-line"></div>
+      </div>
+
+      <!-- About Section Content -->
+      <div class="row">
+        <div class="col-lg-4 ml-auto">
+          <p class="lead">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.</p>
+        </div>
+        <div class="col-lg-4 mr-auto">
+          <p class="lead">You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!</p>
+        </div>
+      </div><br><br><br><br>
+
+      <!-- About Section Button -->
+      <div class="text-center mt-4">
+        <a class="btn btn-xl btn-outline-light" href="#">
+          <i class="fas fa-download mr-2"></i>
+          Know more
+        </a>
+      </div>
+    </div>
+  </section>
+  
+  <!--about e-->
+
+
+<!--team s-->
+<section class="page-section bg-primary text-white mb-0" id="contact">
+<div class="container-fluid" style="background-color: lightgray;">
+
+    <h2 class="page-section-heading text-center text-uppercase text-white">Our Team</h2>
+    <div class="divider-custom">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon">
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="divider-custom-line"></div>
+      </div>
+	<!--<div id="OurEvents" style="font-size: 40px;"><center><u><b>Our Team</b></u></center></div><br>-->
+  <div class="row" align="center">
+    <div class="col-sm-6">
+      <h3 id="Faculty"><b>Faculty Co-ordinators:-</b></h3><hr>
+      <p>prof. Dhatri Pandya</p>
+      <p>prof. Rachna Oza</p>
+      <p>prof. Urvashi Mistry</p>
+      <p>prof. Pratik Sailor</p>
+    </div>
+    
+    <div class="col-sm-6">
+      <h3 id="Student"><b>Student Co-ordinators:-</b></h3><hr>        
+      <p>Mayank Goyani (CO-3rd Year)</p>
+      <p>Sahil Shingala (CO-3rd Year)</p>
+      <p>Kartik Gondaliya (CO-3rd Year)</p>
+      <p>Rishika Jain (CO-3rd Year)</p>
+    </div>
+  </div>
+</div>
+</section>
+<!-- team e -->
+
+
+<footer class="footer text-center">
+    <div class="container">
+      <div class="row">
+
+        <!-- Footer Location -->
+        <div class="col-lg-4 mb-5 mb-lg-0">
+          <h4 class="text-uppercase mb-4">Address</h4>
+          <p class="lead mb-0">Computer Department
+            <br>Scet, Surat</p>
+        </div>
+
+        <!-- Footer Social Icons -->
+        <div class="col-lg-4 mb-5 mb-lg-0">
+          <h4 class="text-uppercase mb-4">Around the Web</h4>
+          <!-- <a class="btn btn-outline-light btn-social mx-1" href="https://www.instagram.com/"> -->
+            <a href="https://www.instagram.com/"><img src="images/insta.png"></a>
+          </a>
+          <!-- <a class="btn btn-outline-light btn-social mx-1" href="#"> -->
+            <a href="https://www.facebook.com/"><img src="images/facebook.png"></a>
+          </a>
+          <!-- <a class="btn btn-outline-light btn-social mx-1" href="#"> -->
+            <a href="https://www.twitter.com/"><img src="images/twitter.png"></a>
+          </a>
+          <!-- <a class="btn btn-outline-light btn-social mx-1" href="#"> -->
+            <a href="https://www.instagram.com/"><img src="images/insta.png"></a>
+          </a>
+        </div>
+
+        <!-- Footer About Text -->
+        <div class="col-lg-4">
+          <h4 class="text-uppercase mb-4">About Freelancer</h4>
+          <p class="lead mb-0">Freelance is a free to use, MIT licensed Bootstrap theme created by
+            <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+  
+  
+  <section class="copyright py-4 text-center text-white">
+    <div class="container">
+      <small>Copyright &copy; Harsh & Smitt</small>
+    </div>
+  </section>
+
+  <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+  <div class="scroll-to-top d-lg-none position-fixed ">
+    <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
+      <i class="fa fa-chevron-up"></i>
+    </a>
+  </div>
+  
+  
+  
+  
+   <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <i class="fas fa-times"></i>
+          </span>
+        </button>
+        <div class="modal-body text-center">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <!-- Portfolio Modal - Title -->
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Log Cabin</h2>
+                <!-- Icon Divider -->
+                <div class="divider-custom">
+                  <div class="divider-custom-line"></div>
+                  <div class="divider-custom-icon">
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="divider-custom-line"></div>
+                </div>
+                <!-- Portfolio Modal - Image -->
+                <img class="img-fluid rounded mb-5" src="img/portfolio/cabin.png" alt="">
+                <!-- Portfolio Modal - Text -->
+                <p class="mb-5">hello ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                <!-- <button class="btn btn-primary" href="#hello" data-dismiss="modal">
+                  <i class="fas fa-times fa-fw"></i>
+                  Close Window
+                </button> -->
+                <button class="button button1" onclick="window.location.href='event.html'">See More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio Modal 2 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-labelledby="portfolioModal2Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <i class="fas fa-times"></i>
+          </span>
+        </button>
+        <div class="modal-body text-center">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <!-- Portfolio Modal - Title -->
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Tasty Cake</h2>
+                <!-- Icon Divider -->
+                <div class="divider-custom">
+                  <div class="divider-custom-line"></div>
+                  <div class="divider-custom-icon">
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="divider-custom-line"></div>
+                </div>
+                <!-- Portfolio Modal - Image -->
+                <img class="img-fluid rounded mb-5" src="img/portfolio/cake.png" alt="">
+                <!-- Portfolio Modal - Text -->
+                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                <button class="btn btn-primary" href="#" data-dismiss="modal">
+                  <i class="fas fa-times fa-fw"></i>
+                  Close Window
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio Modal 3 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-labelledby="portfolioModal3Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <i class="fas fa-times"></i>
+          </span>
+        </button>
+        <div class="modal-body text-center">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <!-- Portfolio Modal - Title -->
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Circus Tent</h2>
+                <!-- Icon Divider -->
+                <div class="divider-custom">
+                  <div class="divider-custom-line"></div>
+                  <div class="divider-custom-icon">
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="divider-custom-line"></div>
+                </div>
+                <!-- Portfolio Modal - Image -->
+                <img class="img-fluid rounded mb-5" src="img/portfolio/circus.png" alt="">
+                <!-- Portfolio Modal - Text -->
+                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                <button class="btn btn-primary" href="#" data-dismiss="modal">
+                  <i class="fas fa-times fa-fw"></i>
+                  Close Window
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio Modal 4 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-labelledby="portfolioModal4Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <i class="fas fa-times"></i>
+          </span>
+        </button>
+        <div class="modal-body text-center">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <!-- Portfolio Modal - Title -->
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Controller</h2>
+                <!-- Icon Divider -->
+                <div class="divider-custom">
+                  <div class="divider-custom-line"></div>
+                  <div class="divider-custom-icon">
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="divider-custom-line"></div>
+                </div>
+                <!-- Portfolio Modal - Image -->
+                <img class="img-fluid rounded mb-5" src="img/portfolio/game.png" alt="">
+                <!-- Portfolio Modal - Text -->
+                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                <button class="btn btn-primary" href="#" data-dismiss="modal">
+                  <i class="fas fa-times fa-fw"></i>
+                  Close Window
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio Modal 5 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-labelledby="portfolioModal5Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <i class="fas fa-times"></i>
+          </span>
+        </button>
+        <div class="modal-body text-center">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <!-- Portfolio Modal - Title -->
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Locked Safe</h2>
+                <!-- Icon Divider -->
+                <div class="divider-custom">
+                  <div class="divider-custom-line"></div>
+                  <div class="divider-custom-icon">
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="divider-custom-line"></div>
+                </div>
+                <!-- Portfolio Modal - Image -->
+                <img class="img-fluid rounded mb-5" src="img/portfolio/safe.png" alt="">
+                <!-- Portfolio Modal - Text -->
+                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                <button class="btn btn-primary" href="#" data-dismiss="modal">
+                  <i class="fas fa-times fa-fw"></i>
+                  Close Window
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio Modal 6 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-labelledby="portfolioModal6Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <i class="fas fa-times"></i>
+          </span>
+        </button>
+        <div class="modal-body text-center">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <!-- Portfolio Modal - Title -->
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Submarine</h2>
+                <!-- Icon Divider -->
+                <div class="divider-custom">
+                  <div class="divider-custom-line"></div>
+                  <div class="divider-custom-icon">
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="divider-custom-line"></div>
+                </div>
+                <!-- Portfolio Modal - Image -->
+                <img class="img-fluid rounded mb-5" src="img/portfolio/submarine.png" alt="">
+                <!-- Portfolio Modal - Text -->
+                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                <button class="btn btn-primary" href="#" data-dismiss="modal">
+                  <i class="fas fa-times fa-fw"></i>
+                  Close Window
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+
+<script src="js/sponsor.js"></script>
+<script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Contact Form JavaScript -->
+  <script src="js/jqBootstrapValidation.js"></script>
+  <script src="js/contact_me.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/freelancer.min.js"></script>
+
+<!-- footer e -->
+</body>
+</html>

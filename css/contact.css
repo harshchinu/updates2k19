@@ -1,0 +1,12 @@
+@media screen and (max-width: 768px) {
+ 	#ContactScet, #ContactMail, #ContactNumber {
+ 	width: 100%;
+    font-size: 2vh;
+}
+}
+
+
+#ContactScet, #ContactMail, #ContactNumber{
+	font-size: 3vh;
+	/*text-decoration-line: underline;*/
+}
