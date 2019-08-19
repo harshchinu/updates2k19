@@ -1,13 +1,35 @@
-/*#U{
-	
+.image1{
+	position: absolute;
+	margin-left: 0vw;			/*scet 25 image*/
+	margin-top: -45vw;
 }
-*/
-#U {
-		border-top: 1vh solid red;
-		border-bottom: 1vh solid blue;
+
+.image2{
+	position: absolute;
+	margin-left: 75vw;			/*xitij image*/
+	margin-top: -45vw;
+}
+.scet{
+	position: absolute;
+	font-size: 2.7vw;
+	margin-top: -42vw;
+	margin-left: 17vw;
+	text-align: center;
+	color: white;
+	color: yellow;
+}
+
+.U {
+	position: absolute;
+	margin-top: -30%;
+	margin-left: -40%;
+		width: 30%;
+		
+		
 		display: inline-block;
 		-webkit-animation: rotation 2s infinite linear;
 }
+
 
 @-webkit-keyframes rotation {
 		from {
@@ -18,6 +40,11 @@
 		}
 }
 
+.pdates2k19{
+	position: absolute;
+	margin-left: -13%;
+	font-size: 2vw;
+}
 
 #screen{
 
@@ -51,7 +78,7 @@
 
 
 
-#scet {
+/*#scet {
 	margin-top: 7%;
 	font-size:8vh;
 	
@@ -90,7 +117,7 @@
 	-webkit-animation-iteration-count: infinite;
 	background-color: #9cf196;
 }
-
+*/
 @media screen and (max-width: 768px) {
  	#U {
 		border-top: 0.5vh solid red;
