@@ -1,4 +1,3 @@
-
 let particles = []
 let microparticles = []
 

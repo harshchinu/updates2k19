@@ -5,14 +5,13 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- btstrp general s-->
+  	<link rel="stylesheet" href="css/css/bootstrap.min.css">
   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  	
   	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
   	
-  	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-<!-- btstrp general end -->
+  	
 	
 <!-- font s -->
   <link href="https://fonts.googleapis.com/css?family=Saira+Stencil+One&display=swap" rel="stylesheet">
@@ -26,11 +25,12 @@
 	<link rel="stylesheet" type="text/css" href="css/card.css">
 	<link rel="stylesheet" type="text/css" href="css/team.css">
 	<link rel="stylesheet" type="text/css" href="css/contact.css">
-	<link rel="stylesheet" type="text/css" href="css/plxs.css">
-  <link rel="stylesheet" type="text/css" href="css/sponosor.css">
-       <link href="css/freelancer.min.css" rel="stylesheet">
+	   <link rel="stylesheet" type="text/css" href="css/plxs.css">
+        <link rel="stylesheet" type="text/css" href="css/sponosor.css">
+    <link href="css/freelancer.min.css" rel="stylesheet">
 
-       <a href="https://icons8.com/icon/13928/instagram-old">Instagram Old icon by Icons8</a>
+      <!-- <a href="https://icons8.com/icon/13928/instagram-old">Instagram Old icon by Icons8</a>-->
+      
       
       
 
@@ -102,9 +102,6 @@
 
 <button onclick="topFunction()" id="TopScrolBtn" title="Go to top">Top</button>
 
-
-
-
 <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
     <div class="container">
       <a class="navbar-brand js-scroll-trigger" href="#page-top">Updates 2k19</a>
@@ -130,7 +127,7 @@
 
 
 
-<div class="title">
+<!--<div class="title">
     <h2 class="scett">Sarvajanik College Of Engineering And Technology</h2>
     <img class="logo1" src="images/scetnew.png">
     <img class="logo2" src="images/logo.png">
@@ -144,178 +141,12 @@
       <a href="#mission"><span></span>Scroll</a>
   </section> -->
   </div>
+  
+  <script src="js/ScreenBackg.js"></script>-->
  
-
-  <script type="text/javascript">
-    let particles = []
-let microparticles = []
-
-const c1 = createCanvas({width: $(window).width(), height: $(window).height()})
-
-const tela   = c1.canvas;
-const canvas = c1.context;
-
-// $("body").append(tela);
-$("body").append(c1.canvas);
-
-
-class Particle{
-  constructor(canvas){
-    this.random = Math.random()
-    this.random1 = Math.random()
-    this.random2 = Math.random()
-    this.progress = 0;
-    this.canvas = canvas;
-    this.life = 1000 + (Math.random()*3000)
-
-    this.x = ($(window).width()/2)  + (Math.random()*20 - Math.random()*20)
-    this.y = $(window).height()
-    this.s = 2 + Math.random();
-    this.w = $(window).width()
-    this.h = $(window).height()
-    this.direction = this.random > .5 ? -1 : 1
-    this.radius = 1 + (3 * this.random)
-    this.color  = "#ff417d"
-
-    this.ID = setInterval(function(){
-      microparticles.push(new microParticle(c1.context,{
-        x: this.x,
-        y: this.y
-      }))
-    }.bind(this), this.random*20)
-
-    setTimeout(function(){
-      clearInterval(this.ID)
-    }.bind(this), this.life )
-  }
-
-  render(){
-    this.canvas.beginPath();
-    this.canvas.arc(this.x, this.y, this.radius, 0, 2 * Math.PI);
-    // this.canvas.lineWidth = 2;
-    this.canvas.shadowOffsetX = 0;
-    this.canvas.shadowOffsetY = 0;
-    // this.canvas.shadowBlur = 6;
-    this.canvas.shadowColor = "#000000";
-    this.canvas.fillStyle = this.color;
-    this.canvas.fill();
-    this.canvas.closePath();
-  }
-
-  move(){
-    this.x -= (this.direction) * Math.sin(this.progress/((this.random1*430))) * this.s;
-    this.y -= Math.cos(this.progress/this.h) * this.s;
-
-    if(this.x < 0 || this.x > this.w - this.radius){
-      clearInterval(this.ID)
-      return false
-    }
-
-    if(this.y < 0){
-      clearInterval(this.ID)
-      return false
-    }
-    this.render()
-    this.progress++
-    return true
-  }
-}
-
-class microParticle{
-  constructor(canvas, options){
-    this.random = Math.random()
-    this.random1 = Math.random()
-    this.random2 = Math.random()
-    this.progress = 0;
-    this.canvas = canvas;
-
-    this.x = options.x
-    this.y = options.y
-    this.s = 2 + Math.random() * 3;
-    this.w = $(window).width()
-    this.h = $(window).height()
-    this.radius = 1 + this.random*0.5
-    this.color  = "#4EFCFE";//this.random > .5 ? "#a9722c" : "#FFFED7"
-  }
-
-  render(){
-    this.canvas.beginPath();
-    this.canvas.arc(this.x, this.y, this.radius, 0, 2 * Math.PI);
-    this.canvas.lineWidth = 2;
-    this.canvas.fillStyle = this.color;
-    this.canvas.fill();
-    this.canvas.closePath();
-  }
-
-  move(){
-    this.x -= Math.sin(this.progress/(100/(this.random1 - this.random2*10))) * this.s;
-    this.y += Math.cos(this.progress/this.h) * this.s;
-
-    if(this.x < 0 || this.x > this.w - this.radius){
-      return false
-    }
-
-    if(this.y > this.h){
-      return false
-    }
-    this.render()
-    this.progress++
-    return true
-  }
-}
-
-var random_life = 1000
-
-
-setInterval(
-  function(){
-    particles.push(new Particle(canvas))
-    random_life = 2000 * Math.random()
-  }.bind(this)
-, random_life)
-
-function clear(){
-  let grd = canvas.createRadialGradient(tela.width/2, tela.height/2, 0, tela.width/2, tela.height/2, tela.width);
-        grd.addColorStop(0,"rgba(82,42,114,1)");
-        grd.addColorStop(1,"rgba(26,14,4,0)");
-    // Fill with gradient
-    canvas.globalAlpha=0.16;
-    canvas.fillStyle=grd;
-    canvas.fillRect(0, 0, tela.width, tela.height);
-}
-
-function blur(ctx,canvas, amt) {
-  // ctx.filter = `blur(${amt}px)`
-  // ctx.drawImage(canvas, 0, 0)
-  // ctx.filter = 'none'
-}
-
-function update(){
-  clear();
-  particles = particles.filter(function(p) {
-    return p.move()
-  })
-  microparticles = microparticles.filter(function(mp) {
-    return mp.move()
-  })
-  requestAnimationFrame(update.bind(this))
-}
-
-
-function createCanvas(properties){
-  let canvas = document.createElement('canvas');
-      canvas.width = properties.width;
-      canvas.height = properties.height;
-  let context = canvas.getContext('2d');
-  return {
-    canvas: canvas,
-    context: context
-  }
-}
-update()
-
-  </script>
  
+   
+   
    <div class="container">
   <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Our  Sponsors</h2>
   <div class="divider-custom">
@@ -580,7 +411,7 @@ update()
             <div class="row justify-content-center">
               <div class="col-lg-8">
                 <!-- Portfolio Modal - Title -->
-                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Log Cabin</h2>
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">नियुक्ति</h2>
                 <!-- Icon Divider -->
                 <div class="divider-custom">
                   <div class="divider-custom-line"></div>
@@ -802,25 +633,25 @@ update()
   </div>
 
   
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<!------ Include the above in your HEAD tag ---------->
+<!------ <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ Include the above in your HEAD tag 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
 
-<script src="js/sponsor.js"></script>
-<script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+     
+    <!--final script-->
+    <sript src="js/slick.js"></sript>
+    <script src="js/jquery-3.4.1.slim.min.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+  	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  	 <script src="js/sponsor.js"></script>
+  	 <script src="js/freelancer.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+  	<script src="js/popper.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  	<script src="js/js/bootstrap.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  	<script src="js/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Contact Form JavaScript -->
-  <script src="js/jqBootstrapValidation.js"></script>
-  <script src="js/contact_me.js"></script>
-
-  <!-- Custom scripts for this template -->
-  <script src="js/freelancer.min.js"></script>
-
-<!-- footer e -->
 </body>
 </html>
