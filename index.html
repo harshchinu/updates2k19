@@ -262,16 +262,29 @@ function startAnimation() {
         <img class="image1" src="images/25.png" width="20%">
         <img class="image2" src="images/xitij.png" width="20%">
         <div class="scet">Sarvajanik College Of Engineering And Technology</div>
+        <center><div class="department">Computer Engineering Department</div></center>
         <center><div class="welcomes">welcomes you in</div></center>
         <center><div class="U"><img src="images/U_yellow.png" width="20%"></div><div class="pdates2k19" style="display: inline-block;">pdates2k19</div></center>
         <center><div class="tagline">It's All About Fun...!!</div></center>
         <center><div class="date">6<sup>th</sup>-7<sup>th</sup> September 2019 | SCET, Surat</div></center>
+
+        <section id="section03" class="demo">
+          <a href="#ourspon"><span></span>Scroll</a>
+        </section>
+        <script type="text/javascript">
+            $(function() {
+            $('a[href*=#]').on('click', function(e) {
+              e.preventDefault();
+              $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+            });
+          });
+        </script>
 <!-- updates e -->
  
  
    
    
-   <div class="container">
+   <div class="container" id="ourspon">
   <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Our  Sponsors</h2>
   <div class="divider-custom">
         <div class="divider-custom-line"></div>
