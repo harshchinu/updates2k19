@@ -3,14 +3,15 @@
 }
 .image1{
 	position: absolute;
-	margin-left: 0vw;			/*scet 25 image*/
-	margin-top: -42vw;
+	/*margin-left: 0vw;*/			/*scet 25 image*/
+	margin-top: -700px;
 }
 
 .image2{
 	position: absolute;
-	margin-left: 78vw;			/*xitij image*/
-	margin-top: -42vw;
+	/*margin-left: 78vw;*/			/*xitij image*/
+	margin-top: -700px;
+	margin-left: 1200px;
 }
 
 
@@ -24,6 +25,14 @@
 	text-align: center;
 	color: white;
 	color: yellow;
+}
+
+.department{
+	position: absolute;
+	color: yellow;
+	margin-left: 35%;
+	margin-top: -34%;
+	font-size: 2vw;
 }
 
 .U {
@@ -145,21 +154,22 @@
 	background-color: #9cf196;
 }
 */
+
 @media screen and (max-width: 768px) {
 	*{
 		margin: 0;
 	}
+
  	.image1{
- 		width: 50%;
-	position: relative;
-	/*margin-left: 0vw;*/			/*scet 25 image*/
-	margin-top: -155vh;
+	width: 50%;
+	position: absolute;
+	margin-top: -85vh;
 }
 
 .image2{
 	width: 50%;
 	position: absolute;
-	margin-left: -1%;			/*xitij image*/
+	margin-left: 45vw;			
 	margin-top: -85vh;
 }
 .scet{
@@ -170,6 +180,14 @@
 	text-align: center;
 	color: white;
 	color: yellow;
+}
+
+.department{
+	position: absolute;
+	color: yellow;
+	margin-left:15%;
+	margin-top: -53vh;
+	font-size: 5vw;
 }
 
 .U {
@@ -217,8 +235,91 @@
 	margin-top: -50%;
 	font-size: 5vw;
 }	
+
 }
 
 
 /*=========================================================================================================*/
+/*i-pad*/
+@media (min-width: 768px) and (max-width: 1050px) {
+ 	*{
+		margin: 0;
+	}
 
+ 	.image1{
+	width: 50%;
+	position: absolute;
+	margin-top: -85vh;
+}
+
+.image2{
+	width: 50%;
+	position: absolute;
+	margin-left: 45vw;			
+	margin-top: -85vh;
+}
+.scet{
+	position: absolute;
+	font-size: 7vw;
+	margin-top: -60vh;
+	margin-left: 0%;
+	text-align: center;
+	color: white;
+	color: yellow;
+}
+
+.department{
+	position: absolute;
+	color: yellow;
+	margin-left:15%;
+	margin-top: -45vh;
+	font-size: 5vw;
+}
+
+.U {
+	position: absolute;
+	margin-top: -37vh;
+	margin-left: -70%;
+		width: 60%;
+		
+		
+		display: inline-block;
+		-webkit-animation: rotation 2s infinite linear;
+}
+
+
+@-webkit-keyframes rotation {
+		from {
+				-webkit-transform: rotateY(0deg);
+		}
+		to {
+				-webkit-transform: rotateY(359deg);
+		}
+}
+
+.pdates2k19{
+	color: white;
+	position: absolute;
+	margin-left: -35%;
+	margin-top: -40vh;
+	font-size: 15vw;
+
+}
+
+.tagline{
+	position: absolute;
+	color: yellow;
+	margin-left: 30%;
+	margin-top: -30%;
+	font-size: 5vw;
+}
+
+.date{
+	position: absolute;
+	color: yellow;
+	margin-left: 10%;
+	margin-top: -20%;
+	font-size: 5vw;
+}	   
+
+}
